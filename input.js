@@ -21,19 +21,23 @@ const handleUserInput = function(key) {
     };
     if (key === "w") {
         connection.write('Move: up');
+        connection.write('Say: UP');
     };
     if (key === "a") {
         connection.write('Move: left');
+        connection.write('Say: LEFT');
     };
     if (key === "s") {
         connection.write('Move: down');
+        connection.write('Say: DOWN');
     };
     if (key === "d") {
         connection.write('Move: right');
+        connection.write('Say: RIGHT');
     };
 };
 
-module.exports = { setupInput }
+module.exports = { setupInput };
 
 /*process.stdin.on("data", (key) => {
         process.stdout.write(".")
